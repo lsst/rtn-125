@@ -34,12 +34,8 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 
 
-#### 1.2.3 LSST DP2 <--> SDSS (u-band)
+#### 1.2.3 LSST DP2 <--> SDSS
 
-Unfortunately, none of the LSST DP2 u-band science exposures overlap SDSS.  Therefore, for transformations between LSST DP2 u-band and SDSS u-band, we make use of synthetic photometry for stellar spectral energy distributions in the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` for the time being.  For other filters, we recommend the observed relations listed in Section 1.3.5 below.
-
-:::{note}
-The Pickles atlas does not include white dwarfs; it is not recommended to use these Pickles-based transformations for white dwarfs, especially in u-band, where white dwarfs differ significantly from other stellar types.
 
 
 
@@ -70,6 +66,24 @@ ComCam data were used to derive empirical transformations between DES and LSST L
 
 #### 1.3.5 LSST DP2 <--> SDSS DR18
 
+| Conversion                | Transformation Equation                           |   RMS | Applicable Color Range      | QA Plot                                                                                           |
+|:--------------------------|:--------------------------------------------------|------:|:----------------------------|:--------------------------------------------------------------------------------------------------|
+| $u_{LSST} \to u_{sdss}$   | $u_{sdss} - u_{LSST} = -0.029 (g−i)LSST +0.148$   | 0.075 | $-0.9 < (g−i)LSST \leq 2.1$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_u_sdss-u_LSST.gi_LSST.norder1.qa1.png)   |
+| $g_{LSST} \to g_{sdss}$   | $g_{sdss} - g_{LSST} = +0.064 (g−i)LSST -0.013$   | 0.021 | $-1.3 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_g_sdss-g_LSST.gi_LSST.norder1.qa1.png)   |
+| $r_{LSST} \to r_{sdss}$   | $r_{sdss} - r_{LSST} = +0.008 (g−i)LSST -0.008$   | 0.019 | $-1.3 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_r_sdss-r_LSST.gi_LSST.norder1.qa1.png)   |
+| $i_{LSST} \to i_{sdss}$   | $i_{sdss} - i_{LSST} = +0.010 (g−i)LSST -0.021$   | 0.02  | $-0.9 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_i_sdss-i_LSST.gi_LSST.norder1.qa1.png)   |
+| $z_{LSST} \to z_{sdss}$   | $z_{sdss} - z_{LSST} = -0.029 (g−i)LSST -0.021$   | 0.03  | $-1.3 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_z_sdss-z_LSST.gi_LSST.norder1.qa1.png)   |
+| $gi_{LSST} \to gi_{sdss}$ | $gi_{sdss} - gi_{LSST} = +0.053 (g−i)LSST +0.008$ | 0.03  | $-0.9 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_gi_sdss-gi_LSST.gi_LSST.norder1.qa1.png) |
+
+| Conversion                | Transformation Equation                              |   RMS | Applicable Color Range         | QA Plot                                                                                           |
+|:--------------------------|:-----------------------------------------------------|------:|:-------------------------------|:--------------------------------------------------------------------------------------------------|
+| $u_{sdss} \to u_{LSST}$   | $u_{LSST} - u_{sdss} = +0.027 (g-i)_{sdss} -0.148$   | 0.075 | $-0.9 < (g-i)_{sdss} \leq 2.2$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_u_LSST-u_sdss.gi_sdss.norder1.qa1.png)   |
+| $g_{sdss} \to g_{LSST}$   | $g_{LSST} - g_{sdss} = -0.065 (g-i)_{sdss} +0.017$   | 0.02  | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_g_LSST-g_sdss.gi_sdss.norder1.qa1.png)   |
+| $r_{sdss} \to r_{LSST}$   | $r_{LSST} - r_{sdss} = -0.007 (g-i)_{sdss} +0.008$   | 0.019 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_r_LSST-r_sdss.gi_sdss.norder1.qa1.png)   |
+| $i_{sdss} \to i_{LSST}$   | $i_{LSST} - i_{sdss} = -0.004 (g-i)_{sdss} +0.017$   | 0.02  | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_i_LSST-i_sdss.gi_sdss.norder1.qa1.png)   |
+| $z_{sdss} \to z_{LSST}$   | $z_{LSST} - z_{sdss} = +0.028 (g-i)_{sdss} +0.021$   | 0.03  | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_z_LSST-z_sdss.gi_sdss.norder1.qa1.png)   |
+| $z_{sdss} \to y_{LSST}$   | $y_{LSST} - z_{sdss} = -0.099 (g-i)_{sdss} +0.082$   | 0.035 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_y_LSST-z_sdss.gi_sdss.norder1.qa1.png)   |
+| $gi_{sdss} \to gi_{LSST}$ | $gi_{LSST} - gi_{sdss} = -0.062 (g-i)_{sdss} +0.002$ | 0.029 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_gi_LSST-gi_sdss.gi_sdss.norder1.qa1.png) |
 
 
 #### 1.3.6 LSST DP2 <--> PanStarrs1 DR2

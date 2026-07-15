@@ -43,12 +43,32 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 #### 1.3.1 LSST DP2 <--> DES
 
-#### 1.3.1.1 Original
+| Conversion             | Transformation Equation                        |   RMS | Applicable Color Range      | QA Plot                                                                                       |
+|:-----------------------|:-----------------------------------------------|------:|:----------------------------|:----------------------------------------------------------------------------------------------|
+| $g_{LSST} \to g_{des}$ | $g_{des} - g_{LSST} = +0.011 (g−i)LSST -0.013$ | 0.015 | $-1.0 < (g−i)LSST \leq 2.3$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_g_des-g_LSST.gi_LSST.norder1.qa1.png) |
+| $g_{LSST} \to g_{des}$ | $g_{des} - g_{LSST} = -0.032 (g−i)LSST +0.080$ | 0.026 | $2.3 < (g−i)LSST \leq 3.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_g_des-g_LSST.gi_LSST.norder1.qa1.png) |
+| $r_{LSST} \to r_{des}$ | $r_{des} - r_{LSST} = -0.058 (g−i)LSST +0.005$ | 0.008 | $-0.8 < (g−i)LSST \leq 2.0$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_r_des-r_LSST.gi_LSST.norder1.qa1.png) |
+| $r_{LSST} \to r_{des}$ | $r_{des} - r_{LSST} = -0.122 (g−i)LSST +0.133$ | 0.016 | $2.0 < (g−i)LSST \leq 3.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_r_des-r_LSST.gi_LSST.norder1.qa1.png) |
+| $i_{LSST} \to i_{des}$ | $i_{des} - i_{LSST} = -0.049 (g−i)LSST +0.018$ | 0.01  | $-0.8 < (g−i)LSST \leq 1.8$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_i_des-i_LSST.gi_LSST.norder1.qa1.png) |
+| $i_{LSST} \to i_{des}$ | $i_{des} - i_{LSST} = -0.121 (g−i)LSST +0.144$ | 0.012 | $1.8 < (g−i)LSST \leq 3.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_i_des-i_LSST.gi_LSST.norder1.qa1.png) |
+| $z_{LSST} \to z_{des}$ | $z_{des} - z_{LSST} = -0.328 (i−z)LSST -0.002$ | 0.009 | $-0.3 < (i−z)LSST \leq 0.2$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_z_des-z_LSST.iz_LSST.norder1.qa1.png) |
+| $z_{LSST} \to z_{des}$ | $z_{des} - z_{LSST} = -0.217 (i−z)LSST -0.021$ | 0.01  | $0.2 < (i−z)LSST \leq 1.3$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_z_des-z_LSST.iz_LSST.norder1.qa1.png) |
+| $y_{LSST} \to Y_{des}$ | $Y_{des} - y_{LSST} = -0.119 (i−z)LSST +0.018$ | 0.02  | $-0.6 < (i−z)LSST \leq 0.2$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_Y_des-y_LSST.iz_LSST.norder1.qa1.png) |
+| $y_{LSST} \to Y_{des}$ | $Y_{des} - y_{LSST} = -0.051 (i−z)LSST +0.007$ | 0.018 | $0.2 < (i−z)LSST \leq 2.5$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_Y_des-y_LSST.iz_LSST.norder1.qa1.png) |
 
-ComCam data were used to derive empirical transformations between DES and LSST LSST DP2 filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
 
-#### 1.3.1.2 Updated
-
+| Conversion             | Transformation Equation                       |   RMS | Applicable Color Range     | QA Plot                                                                                      |
+|:-----------------------|:----------------------------------------------|------:|:---------------------------|:---------------------------------------------------------------------------------------------|
+| $g_{des} \to g_{LSST}$ | $g_{LSST} - g_{des} = -0.011 (g−i)des +0.014$ | 0.014 | $-0.8 < (g−i)des \leq 2.3$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_g_LSST-g_des.gi_des.norder1.qa1.png) |
+| $g_{des} \to g_{LSST}$ | $g_{LSST} - g_{des} = +0.020 (g−i)des -0.054$ | 0.025 | $2.3 < (g−i)des \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_g_LSST-g_des.gi_des.norder1.qa1.png) |
+| $r_{des} \to r_{LSST}$ | $r_{LSST} - r_{des} = +0.054 (g−i)des -0.003$ | 0.008 | $-0.8 < (g−i)des \leq 2.0$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_r_LSST-r_des.gi_des.norder1.qa1.png) |
+| $r_{des} \to r_{LSST}$ | $r_{LSST} - r_{des} = +0.108 (g−i)des -0.116$ | 0.015 | $2.0 < (g−i)des \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_r_LSST-r_des.gi_des.norder1.qa1.png) |
+| $i_{des} \to i_{LSST}$ | $i_{LSST} - i_{des} = +0.045 (g−i)des -0.016$ | 0.009 | $-0.8 < (g−i)des \leq 1.8$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_i_LSST-i_des.gi_des.norder1.qa1.png) |
+| $i_{des} \to i_{LSST}$ | $i_{LSST} - i_{des} = +0.109 (g−i)des -0.132$ | 0.012 | $1.8 < (g−i)des \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_i_LSST-i_des.gi_des.norder1.qa1.png) |
+| $z_{des} \to z_{LSST}$ | $z_{LSST} - z_{des} = +0.319 (i−z)des -0.001$ | 0.007 | $-0.3 < (i−z)des \leq 0.2$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_z_LSST-z_des.iz_des.norder1.qa1.png) |
+| $z_{des} \to z_{LSST}$ | $z_{LSST} - z_{des} = +0.241 (i−z)des +0.013$ | 0.008 | $0.2 < (i−z)des \leq 1.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_z_LSST-z_des.iz_des.norder1.qa1.png) |
+| $Y_{des} \to y_{LSST}$ | $y_{LSST} - Y_{des} = +0.120 (i−z)des -0.019$ | 0.019 | $-0.3 < (i−z)des \leq 0.2$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_y_LSST-Y_des.iz_des.norder1.qa1.png) |
+| $Y_{des} \to y_{LSST}$ | $y_{LSST} - Y_{des} = +0.056 (i−z)des -0.009$ | 0.018 | $0.2 < (i−z)des \leq 1.1$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_y_LSST-Y_des.iz_des.norder1.qa1.png) |
 
 
 

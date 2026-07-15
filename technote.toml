@@ -1,0 +1,23 @@
+[technote]
+id = "RTN-125"
+series_id = "RTN"
+canonical_url = "https://rtn-125.lsst.io"
+github_url = "https://github.com/lsst/rtn-125"
+github_default_branch = "main"
+date_created = 2026-07-15T15:32:15Z
+organization.name = "NSF-DOE Vera C. Rubin Observatory"
+organization.ror = "https://ror.org/048g3cy84"
+license.id = "CC-BY-4.0"
+
+[technote.status]
+state = "draft"
+
+[[technote.authors]]
+name.given = "Douglas L."
+name.family = "Tucker"
+internal_id = "tuckerdl"
+orcid = "https://orcid.org/0000-0001-7211-5729"
+[[technote.authors.affiliations]]
+name = "Fermi National Accelerator Laboratory"
+internal_id = "Fermilab"
+address = "Batavia"

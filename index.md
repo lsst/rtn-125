@@ -47,12 +47,16 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 |:-----------------------|:-----------------------------------------------|------:|:----------------------------|:----------------------------------------------------------------------------------------------|
 | $g_{LSST} \to g_{des}$ | $g_{des} - g_{LSST} = +0.011 (g−i)LSST -0.013$ | 0.015 | $-1.0 < (g−i)LSST \leq 2.3$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_g_des-g_LSST.gi_LSST.norder1.qa1.png) |
 | $g_{LSST} \to g_{des}$ | $g_{des} - g_{LSST} = -0.032 (g−i)LSST +0.080$ | 0.026 | $2.3 < (g−i)LSST \leq 3.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_g_des-g_LSST.gi_LSST.norder1.qa1.png) |
+|                        |                                                |       |                             |                                                                                               |
 | $r_{LSST} \to r_{des}$ | $r_{des} - r_{LSST} = -0.058 (g−i)LSST +0.005$ | 0.008 | $-0.8 < (g−i)LSST \leq 2.0$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_r_des-r_LSST.gi_LSST.norder1.qa1.png) |
 | $r_{LSST} \to r_{des}$ | $r_{des} - r_{LSST} = -0.122 (g−i)LSST +0.133$ | 0.016 | $2.0 < (g−i)LSST \leq 3.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_r_des-r_LSST.gi_LSST.norder1.qa1.png) |
+|                        |                                                |       |                             |                                                                                               |
 | $i_{LSST} \to i_{des}$ | $i_{des} - i_{LSST} = -0.049 (g−i)LSST +0.018$ | 0.01  | $-0.8 < (g−i)LSST \leq 1.8$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_i_des-i_LSST.gi_LSST.norder1.qa1.png) |
 | $i_{LSST} \to i_{des}$ | $i_{des} - i_{LSST} = -0.121 (g−i)LSST +0.144$ | 0.012 | $1.8 < (g−i)LSST \leq 3.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_i_des-i_LSST.gi_LSST.norder1.qa1.png) |
+|                        |                                                |       |                             |                                                                                               |
 | $z_{LSST} \to z_{des}$ | $z_{des} - z_{LSST} = -0.328 (i−z)LSST -0.002$ | 0.009 | $-0.3 < (i−z)LSST \leq 0.2$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_z_des-z_LSST.iz_LSST.norder1.qa1.png) |
 | $z_{LSST} \to z_{des}$ | $z_{des} - z_{LSST} = -0.217 (i−z)LSST -0.021$ | 0.01  | $0.2 < (i−z)LSST \leq 1.3$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_z_des-z_LSST.iz_LSST.norder1.qa1.png) |
+|                        |                                                |       |                             |                                                                                               |
 | $y_{LSST} \to Y_{des}$ | $Y_{des} - y_{LSST} = -0.119 (i−z)LSST +0.018$ | 0.02  | $-0.6 < (i−z)LSST \leq 0.2$ | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_Y_des-y_LSST.iz_LSST.norder1.qa1.png) |
 | $y_{LSST} \to Y_{des}$ | $Y_{des} - y_{LSST} = -0.051 (i−z)LSST +0.007$ | 0.018 | $0.2 < (i−z)LSST \leq 2.5$  | [link](_static/plots/qaPlot.LSST_DP2_to_DESDR2.fit.dmag_Y_des-y_LSST.iz_LSST.norder1.qa1.png) |
 
@@ -61,12 +65,16 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 |:-----------------------|:----------------------------------------------|------:|:---------------------------|:---------------------------------------------------------------------------------------------|
 | $g_{des} \to g_{LSST}$ | $g_{LSST} - g_{des} = -0.011 (g−i)des +0.014$ | 0.014 | $-0.8 < (g−i)des \leq 2.3$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_g_LSST-g_des.gi_des.norder1.qa1.png) |
 | $g_{des} \to g_{LSST}$ | $g_{LSST} - g_{des} = +0.020 (g−i)des -0.054$ | 0.025 | $2.3 < (g−i)des \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_g_LSST-g_des.gi_des.norder1.qa1.png) |
+|                        |                                               |       |                            |                                                                                              |
 | $r_{des} \to r_{LSST}$ | $r_{LSST} - r_{des} = +0.054 (g−i)des -0.003$ | 0.008 | $-0.8 < (g−i)des \leq 2.0$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_r_LSST-r_des.gi_des.norder1.qa1.png) |
 | $r_{des} \to r_{LSST}$ | $r_{LSST} - r_{des} = +0.108 (g−i)des -0.116$ | 0.015 | $2.0 < (g−i)des \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_r_LSST-r_des.gi_des.norder1.qa1.png) |
+|                        |                                               |       |                            |                                                                                              |
 | $i_{des} \to i_{LSST}$ | $i_{LSST} - i_{des} = +0.045 (g−i)des -0.016$ | 0.009 | $-0.8 < (g−i)des \leq 1.8$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_i_LSST-i_des.gi_des.norder1.qa1.png) |
 | $i_{des} \to i_{LSST}$ | $i_{LSST} - i_{des} = +0.109 (g−i)des -0.132$ | 0.012 | $1.8 < (g−i)des \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_i_LSST-i_des.gi_des.norder1.qa1.png) |
+|                        |                                               |       |                            |                                                                                              |
 | $z_{des} \to z_{LSST}$ | $z_{LSST} - z_{des} = +0.319 (i−z)des -0.001$ | 0.007 | $-0.3 < (i−z)des \leq 0.2$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_z_LSST-z_des.iz_des.norder1.qa1.png) |
 | $z_{des} \to z_{LSST}$ | $z_{LSST} - z_{des} = +0.241 (i−z)des +0.013$ | 0.008 | $0.2 < (i−z)des \leq 1.0$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_z_LSST-z_des.iz_des.norder1.qa1.png) |
+|                        |                                               |       |                            |                                                                                              |
 | $Y_{des} \to y_{LSST}$ | $y_{LSST} - Y_{des} = +0.120 (i−z)des -0.019$ | 0.019 | $-0.3 < (i−z)des \leq 0.2$ | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_y_LSST-Y_des.iz_des.norder1.qa1.png) |
 | $Y_{des} \to y_{LSST}$ | $y_{LSST} - Y_{des} = +0.056 (i−z)des -0.009$ | 0.018 | $0.2 < (i−z)des \leq 1.1$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_y_LSST-Y_des.iz_des.norder1.qa1.png) |
 
@@ -79,8 +87,26 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 #### 1.3.4 LSST DP2 <--> GAIA DR3
 
+| Conversion               | Transformation Equation                                                   |   RMS | Applicable Color Range        | QA Plot                                                                                           |
+|:-------------------------|:--------------------------------------------------------------------------|------:|:------------------------------|:--------------------------------------------------------------------------------------------------|
+| $g_{LSST} \to G_{gaia}$  | $G_{gaia} - g_{LSST} = -0.037 (g-i)_{LSST}^2 -0.600 (g-i)_{LSST} -0.056$  | 0.01  | $0.2 < (g-i)_{LSST} \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP2_to_Gaia_DR3.fit.dmag_G_gaia-g_LSST.gi_LSST.norder2.qa1.png)  |
+|                          |                                                                           |       |                               |                                                                                                   |
+| $g_{LSST} \to BP_{gaia}$ | $BP_{gaia} - g_{LSST} = +0.096 (g-i)_{LSST}^2 -0.487 (g-i)_{LSST} +0.194$ | 0.037 | $0.3 < (g-i)_{LSST} \leq 3.2$ | [link](_static/plots/qaPlot.LSST_DP2_to_Gaia_DR3.fit.dmag_BP_gaia-g_LSST.gi_LSST.norder2.qa1.png) |
+|                          |                                                                           |       |                               |                                                                                                   |
+| $r_{LSST} \to RP_{gaia}$ | $RP_{gaia} - r_{LSST} = -0.267 (g-i)_{LSST}^2 +0.242 (g-i)_{LSST} -0.563$ | 0.043 | $0.3 < (g-i)_{LSST} \leq 3.2$ | [link](_static/plots/qaPlot.LSST_DP2_to_Gaia_DR3.fit.dmag_RP_gaia-r_LSST.gi_LSST.norder2.qa1.png) |
 
 
+| Conversion              | Transformation Equation                                                      |   RMS | Applicable Color Range           | QA Plot                                                                                             |
+|:------------------------|:-----------------------------------------------------------------------------|------:|:---------------------------------|:----------------------------------------------------------------------------------------------------|
+| $G_{gaia} \to g_{LSST}$ | $g_{LSST} - G_{gaia} = -0.099 (BP-RP)_{gaia}^2 +1.172 (BP-RP)_{gaia} -0.527$ | 0.036 | $0.6 < (BP-RP)_{gaia} \leq 3.1$  | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_g_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+|                         |                                                                              |       |                                  |                                                                                                                                  |
+| $G_{gaia} \to r_{LSST}$ | $r_{LSST} - G_{gaia} = +0.286 (BP-RP)_{gaia}^2 -0.650 (BP-RP)_{gaia} +0.325$ | 0.024 | $0.5 < (BP-RP)_{gaia} \leq 3.1$  | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_r_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+|                         |                                                                              |       |                                  |                                                                                                                                  |
+| $G_{gaia} \to i_{LSST}$ | $i_{LSST} - G_{gaia} = +0.104 (BP-RP)_{gaia}^2 -0.683 (BP-RP)_{gaia} +0.347$ | 0.01  | $-0.2 < (BP-RP)_{gaia} \leq 3.3$ | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_i_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+|                         |                                                                              |       |                                  |                                                                                                                                  |
+| $G_{gaia} \to z_{LSST}$ | $z_{LSST} - G_{gaia} = +0.055 (BP-RP)_{gaia}^2 -0.817 (BP-RP)_{gaia} +0.464$ | 0.021 | $-0.4 < (BP-RP)_{gaia} \leq 3.3$ | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_z_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+|                         |                                                                              |       |                                  |                                                                                                                                  |
+| $G_{gaia} \to y_{LSST}$ | $y_{LSST} - G_{gaia} = +0.044 (BP-RP)_{gaia}^2 -0.914 (BP-RP)_{gaia} +0.533$ | 0.026 | $0.3 < (BP-RP)_{gaia} \leq 3.3$  | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_y_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
 
 
 
@@ -89,20 +115,31 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | Conversion                | Transformation Equation                           |   RMS | Applicable Color Range      | QA Plot                                                                                           |
 |:--------------------------|:--------------------------------------------------|------:|:----------------------------|:--------------------------------------------------------------------------------------------------|
 | $u_{LSST} \to u_{sdss}$   | $u_{sdss} - u_{LSST} = -0.029 (g−i)LSST +0.148$   | 0.075 | $-0.9 < (g−i)LSST \leq 2.1$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_u_sdss-u_LSST.gi_LSST.norder1.qa1.png)   |
+|                           |                                                   |       |                             |                                                                                                   |
 | $g_{LSST} \to g_{sdss}$   | $g_{sdss} - g_{LSST} = +0.064 (g−i)LSST -0.013$   | 0.021 | $-1.3 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_g_sdss-g_LSST.gi_LSST.norder1.qa1.png)   |
+|                           |                                                   |       |                             |                                                                                                   |
 | $r_{LSST} \to r_{sdss}$   | $r_{sdss} - r_{LSST} = +0.008 (g−i)LSST -0.008$   | 0.019 | $-1.3 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_r_sdss-r_LSST.gi_LSST.norder1.qa1.png)   |
+|                           |                                                   |       |                             |                                                                                                   |
 | $i_{LSST} \to i_{sdss}$   | $i_{sdss} - i_{LSST} = +0.010 (g−i)LSST -0.021$   | 0.02  | $-0.9 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_i_sdss-i_LSST.gi_LSST.norder1.qa1.png)   |
+|                           |                                                   |       |                             |                                                                                                   |
 | $z_{LSST} \to z_{sdss}$   | $z_{sdss} - z_{LSST} = -0.029 (g−i)LSST -0.021$   | 0.03  | $-1.3 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_z_sdss-z_LSST.gi_LSST.norder1.qa1.png)   |
+|                           |                                                   |       |                             |                                                                                                   |
 | $gi_{LSST} \to gi_{sdss}$ | $gi_{sdss} - gi_{LSST} = +0.053 (g−i)LSST +0.008$ | 0.03  | $-0.9 < (g−i)LSST \leq 2.2$ | [link](_static/plots/qaPlot.LSSTDP2_to_SDSSDR18.fit.dmag_gi_sdss-gi_LSST.gi_LSST.norder1.qa1.png) |
 
 | Conversion                | Transformation Equation                              |   RMS | Applicable Color Range         | QA Plot                                                                                           |
 |:--------------------------|:-----------------------------------------------------|------:|:-------------------------------|:--------------------------------------------------------------------------------------------------|
 | $u_{sdss} \to u_{LSST}$   | $u_{LSST} - u_{sdss} = +0.027 (g-i)_{sdss} -0.148$   | 0.075 | $-0.9 < (g-i)_{sdss} \leq 2.2$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_u_LSST-u_sdss.gi_sdss.norder1.qa1.png)   |
+|                           |                                                      |       |                                |                                                                                                   |
 | $g_{sdss} \to g_{LSST}$   | $g_{LSST} - g_{sdss} = -0.065 (g-i)_{sdss} +0.017$   | 0.02  | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_g_LSST-g_sdss.gi_sdss.norder1.qa1.png)   |
+|                           |                                                      |       |                                |                                                                                                   |
 | $r_{sdss} \to r_{LSST}$   | $r_{LSST} - r_{sdss} = -0.007 (g-i)_{sdss} +0.008$   | 0.019 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_r_LSST-r_sdss.gi_sdss.norder1.qa1.png)   |
+|                           |                                                      |       |                                |                                                                                                   |
 | $i_{sdss} \to i_{LSST}$   | $i_{LSST} - i_{sdss} = -0.004 (g-i)_{sdss} +0.017$   | 0.02  | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_i_LSST-i_sdss.gi_sdss.norder1.qa1.png)   |
+|                           |                                                      |       |                                |                                                                                                   |
 | $z_{sdss} \to z_{LSST}$   | $z_{LSST} - z_{sdss} = +0.028 (g-i)_{sdss} +0.021$   | 0.03  | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_z_LSST-z_sdss.gi_sdss.norder1.qa1.png)   |
+|                           |                                                      |       |                                |                                                                                                   |
 | $z_{sdss} \to y_{LSST}$   | $y_{LSST} - z_{sdss} = -0.099 (g-i)_{sdss} +0.082$   | 0.035 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_y_LSST-z_sdss.gi_sdss.norder1.qa1.png)   |
+|                           |                                                      |       |                                |                                                                                                   |
 | $gi_{sdss} \to gi_{LSST}$ | $gi_{LSST} - gi_{sdss} = -0.062 (g-i)_{sdss} +0.002$ | 0.029 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_gi_LSST-gi_sdss.gi_sdss.norder1.qa1.png) |
 
 

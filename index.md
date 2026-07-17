@@ -231,6 +231,20 @@ df['g_des'] = df['g_ComCam'] + df['offset']
 
 #### 2.2.3 LSST DP2 <--> GAIA DR3
 
+| Conversion               |   RMS | Applicable Color Range     | QA Plot                                                                          | Lookup Table                                                             |
+|:-------------------------|------:|:---------------------------|:---------------------------------------------------------------------------------|:-------------------------------------------------------------------------|
+| $r_{LSST} \to G_{gaia}$  | 0.02  | $0.3 < (g-i)_{LSST} < 2.9$ | [link](_static/plots/qaPlot_transInterp.LSST_DR2_to_GaiaDR3.G_gaia_gi_LSST.png)  | [link](_static/data/transInterp.LSST_DR2_to_GaiaDR3.G_gaia_gi_LSST.csv)  |
+| $g_{LSST} \to BP_{gaia}$ | 0.025 | $0.3 < (g-i)_{LSST} < 2.9$ | [link](_static/plots/qaPlot_transInterp.LSST_DR2_to_GaiaDR3.BP_gaia_gi_LSST.png) | [link](_static/data/transInterp.LSST_DR2_to_GaiaDR3.BP_gaia_gi_LSST.csv) |
+| $r_{LSST} \to RP_{gaia}$ | 0.028 | $0.3 < (g-i)_{LSST} < 2.9$ | [link](_static/plots/qaPlot_transInterp.LSST_DR2_to_GaiaDR3.RP_gaia_gi_LSST.png) | [link](_static/data/transInterp.LSST_DR2_to_GaiaDR3.RP_gaia_gi_LSST.csv) |
+
+
+| Conversion              |   RMS | Applicable Color Range       | QA Plot                                                                            | Lookup Table                                                               |
+|:------------------------|------:|:-----------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
+| $G_{gaia} \to g_{LSST}$ | 0.027 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_LSST_DR2.g_LSST_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_LSST_DR2.g_LSST_BP_RP_gaia.csv) |
+| $G_{gaia} \to r_{LSST}$ | 0.018 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_LSST_DR2.r_LSST_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_LSST_DR2.r_LSST_BP_RP_gaia.csv) |
+| $G_{gaia} \to i_{LSST}$ | 0.01  | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_LSST_DR2.i_LSST_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_LSST_DR2.i_LSST_BP_RP_gaia.csv) |
+| $G_{gaia} \to z_{LSST}$ | 0.018 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_LSST_DR2.z_LSST_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_LSST_DR2.z_LSST_BP_RP_gaia.csv) |
+| $G_{gaia} \to y_{LSST}$ | 0.024 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_LSST_DR2.y_LSST_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_LSST_DR2.y_LSST_BP_RP_gaia.csv) |
 
 
 #### 2.2.4 LSST DP2 <--> PS1 DR2

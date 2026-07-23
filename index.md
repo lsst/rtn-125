@@ -36,6 +36,12 @@ _Under Construction_
 
 #### 1.3.1 LSST DP2 <--> LSST DP1
 
+Recall that LSST Data Preview 1 (DP1) was performed with the LSST Commissioning Camera (ComCam), which used only ITL CCDs.
+LSST Data Preview 2 (DP2) was performed with the LSST Main Camerta (LSSTCam), which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.
+During photometric calibration, the DP2 data are placed onto a standard system across the camera focal plane.  The DP1 and DP2 standard systems differ slightly.
+Thus, for to compare DP1 and DP2 magnitudes and colors most accurately, one should transform from one system to the other.  Here are the relations to do just that.
+
+
 | Conversion                | Transformation Equation                           |   RMS | Applicable Color Range      | QA Plot                                                                                            |
 |:--------------------------|:--------------------------------------------------|------:|:----------------------------|:---------------------------------------------------------------------------------------------------|
 | $u_{LSST} \to u_{ComCam}$ | $u_{ComCam} - u_{LSST} = -0.023 (g−i)LSST -0.010$ | 0.054 | $-0.6 < (g−i)LSST \leq 2.8$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_u_ComCam-u_LSST.gi_LSST.norder1.qa1.png) |

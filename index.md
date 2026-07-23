@@ -23,6 +23,8 @@ A simple and popular method of performing photometric transformations between tw
 
 ### 1.2. Synthetic LSSTCam Transformations
 
+These transformations are based on synthetic magnitudes in DP2 and from other surveys/photometric systems.  They are generally preferred if no observed tranfromations are available for matched stars/objects in DP2 and the other survey/photometric system (e.g., like for LSST <--> TESS, in which TESS stars are all too bright and thus saturate in the LSST science observations).
+
 Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for LSSTCam and other photometric systems. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
 #### 1.2.1 LSST <--> TESS
@@ -32,7 +34,9 @@ _Under Construction_
 
 
 
-### 1.3. LSST DP2 Transformations
+### 1.3. Observed LSST DP2 Transformations
+
+These transformations are based on the actual observed magnitudes of stars in DP2 and from other surveys/photometric systems.  They are generally preferred over transformations based on synthetic photometry.
 
 #### 1.3.1 LSST DP2 <--> LSST DP1
 

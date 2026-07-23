@@ -25,23 +25,37 @@ A simple and popular method of performing photometric transformations between tw
 
 Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for LSSTCam and other photometric systems. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
-#### 1.2.1 LSST <--> DES
+#### 1.2.1 LSST <--> TESS
 
-
-
-#### 1.2.2 LSST <--> TESS
-
-
-
-
-#### 1.2.3 LSST DP2 <--> SDSS
+_Under Construction_
 
 
 
 
 ### 1.3. LSST DP2 Transformations
 
-#### 1.3.1 LSST DP2 <--> DES
+#### 1.3.1 LSST DP2 <--> LSST DP1
+
+| Conversion                | Transformation Equation                           |   RMS | Applicable Color Range      | QA Plot                                                                                            |
+|:--------------------------|:--------------------------------------------------|------:|:----------------------------|:---------------------------------------------------------------------------------------------------|
+| $u_{LSST} \to u_{ComCam}$ | $u_{ComCam} - u_{LSST} = -0.023 (g−i)LSST -0.010$ | 0.054 | $-0.6 < (g−i)LSST \leq 2.8$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_u_ComCam-u_LSST.gi_LSST.norder1.qa1.png) |
+| $g_{LSST} \to g_{ComCam}$ | $g_{ComCam} - g_{LSST} = +0.012 (g−i)LSST -0.022$ | 0.008 | $-0.6 < (g−i)LSST \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_g_ComCam-g_LSST.gi_LSST.norder1.qa1.png) |
+| $r_{LSST} \to r_{ComCam}$ | $r_{ComCam} - r_{LSST} = -0.001 (g−i)LSST -0.001$ | 0.006 | $-0.6 < (g−i)LSST \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_r_ComCam-r_LSST.gi_LSST.norder1.qa1.png) |
+| $i_{LSST} \to i_{ComCam}$ | $i_{ComCam} - i_{LSST} = -0.010 (g−i)LSST +0.017$ | 0.005 | $-0.6 < (g−i)LSST \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_i_ComCam-i_LSST.gi_LSST.norder1.qa1.png) |
+| $z_{LSST} \to z_{ComCam}$ | $z_{ComCam} - z_{LSST} = -0.005 (i−z)LSST +0.002$ | 0.005 | $-0.2 < (i−z)LSST \leq 0.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_z_ComCam-z_LSST.iz_LSST.norder1.qa1.png) |
+| $y_{LSST} \to y_{ComCam}$ | $y_{ComCam} - y_{LSST} = -0.007 (z−y)LSST -0.001$ | 0.015 | $-0.2 < (z−y)LSST \leq 0.4$ | [link](_static/plots/qaPlot.LSST_DP2_to_LSST_DP1.fit.dmag_y_ComCam-y_LSST.zy_LSST.norder1.qa1.png) |
+
+| Conversion                | Transformation Equation                             |   RMS | Applicable Color Range        | QA Plot                                                                                              |
+|:--------------------------|:----------------------------------------------------|------:|:------------------------------|:-----------------------------------------------------------------------------------------------------|
+| $u_{ComCam} \to u_{LSST}$ | $u_{LSST} - u_{ComCam} = +0.022 (g−i)ComCam +0.011$ | 0.054 | $-0.6 < (g−i)ComCam \leq 2.8$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_u_LSST-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $g_{ComCam} \to g_{LSST}$ | $g_{LSST} - g_{ComCam} = -0.012 (g−i)ComCam +0.021$ | 0.008 | $-0.6 < (g−i)ComCam \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_g_LSST-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $r_{ComCam} \to r_{LSST}$ | $r_{LSST} - r_{ComCam} = +0.001 (g−i)ComCam +0.002$ | 0.006 | $-0.6 < (g−i)ComCam \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_r_LSST-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $i_{ComCam} \to i_{LSST}$ | $i_{LSST} - i_{ComCam} = +0.010 (g−i)ComCam -0.017$ | 0.005 | $-0.6 < (g−i)ComCam \leq 2.9$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_i_LSST-i_ComCam.gi_ComCam.norder1.qa1.png) |
+| $z_{ComCam} \to z_{LSST}$ | $z_{LSST} - z_{ComCam} = +0.006 (i−z)ComCam -0.002$ | 0.005 | $-0.2 < (i−z)ComCam \leq 0.7$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_z_LSST-z_ComCam.iz_ComCam.norder1.qa1.png) |
+| $y_{ComCam} \to y_{LSST}$ | $y_{LSST} - y_{ComCam} = +0.036 (z−y)ComCam -0.002$ | 0.015 | $-0.2 < (z−y)ComCam \leq 0.4$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_y_LSST-y_ComCam.zy_ComCam.norder1.qa1.png) |
+
+
+#### 1.3.2 LSST DP2 <--> DES
 
 | Conversion             | Transformation Equation                        |   RMS | Applicable Color Range      | QA Plot                                                                                       |
 |:-----------------------|:-----------------------------------------------|------:|:----------------------------|:----------------------------------------------------------------------------------------------|
@@ -79,11 +93,35 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | $Y_{des} \to y_{LSST}$ | $y_{LSST} - Y_{des} = +0.056 (i−z)des -0.009$ | 0.018 | $0.2 < (i−z)des \leq 1.1$  | [link](_static/plots/qaPlot.DESDR2_to_LSST_DP2.fit.dmag_y_LSST-Y_des.iz_des.norder1.qa1.png) |
 
 
+#### 1.3.3 LSST DP2 <--> PanStarrs1 DR2
 
-#### 1.3.2 LSST DP2 <--> Euclid
+
+| Conversion             | Transformation Equation                           |   RMS | Applicable Color Range         | QA Plot                                                                                        |
+|:-----------------------|:--------------------------------------------------|------:|:-------------------------------|:-----------------------------------------------------------------------------------------------|
+| $g_{LSST} \to g_{ps1}$ | $g_{ps1} - g_{LSST} = -0.029 (g-i)_{LSST} -0.028$ | 0.03  | $-0.7 < (g-i)_{LSST} \leq 3.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_g_ps1-g_LSST.gi_LSST.norder1.qa1.png) |
+|                        |                                                   |       |                                |                                                                                                |
+| $r_{LSST} \to r_{ps1}$ | $r_{ps1} - r_{LSST} = +0.000 (g-i)_{LSST} -0.002$ | 0.017 | $-0.7 < (g-i)_{LSST} \leq 3.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_r_ps1-r_LSST.gi_LSST.norder1.qa1.png) |
+|                        |                                                   |       |                                |                                                                                                |
+| $i_{LSST} \to i_{ps1}$ | $i_{ps1} - i_{LSST} = +0.007 (g-i)_{LSST} -0.006$ | 0.012 | $-0.7 < (g-i)_{LSST} \leq 3.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_i_ps1-i_LSST.gi_LSST.norder1.qa1.png) |
+|                        |                                                   |       |                                |                                                                                                |
+| $z_{LSST} \to z_{ps1}$ | $z_{ps1} - z_{LSST} = +0.007 (i-z)_{LSST} +0.004$ | 0.012 | $-0.2 < (i-z)_{LSST} \leq 1.3$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_z_ps1-z_LSST.iz_LSST.norder1.qa1.png) |
+|                        |                                                   |       |                                |                                                                                                |
+| $y_{LSST} \to y_{ps1}$ | $y_{ps1} - y_{LSST} = +0.060 (z-y)_{LSST} -0.025$ | 0.025 | $-0.5 < (z-y)_{LSST} \leq 1.0$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_y_ps1-y_LSST.zy_LSST.norder1.qa1.png) |
 
 
-#### 1.3.3 LSST DP2 <--> Johnson-Cousins UBVRcIc
+| Conversion             | Transformation Equation                          |   RMS | Applicable Color Range        | QA Plot                                                                                       |
+|:-----------------------|:-------------------------------------------------|------:|:------------------------------|:----------------------------------------------------------------------------------------------|
+| $g_{ps1} \to g_{LSST}$ | $g_{LSST} - g_{ps1} = +0.028 (g-i)_{ps1} +0.031$ | 0.031 | $-0.7 < (g-i)_{ps1} \leq 3.3$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_g_LSST-g_ps1.gi_ps1.norder1.qa1.png) |
+|                        |                                                  |       |                               |                                                                                               |
+| $r_{ps1} \to r_{LSST}$ | $r_{LSST} - r_{ps1} = -0.001 (g-i)_{ps1} +0.002$ | 0.017 | $-0.7 < (g-i)_{ps1} \leq 3.4$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_r_LSST-r_ps1.gi_ps1.norder1.qa1.png) |
+|                        |                                                  |       |                               |                                                                                               |
+| $i_{ps1} \to i_{LSST}$ | $i_{LSST} - i_{ps1} = -0.007 (g-i)_{ps1} +0.006$ | 0.012 | $-0.7 < (g-i)_{ps1} \leq 3.4$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_i_LSST-i_ps1.gi_ps1.norder1.qa1.png) |
+|                        |                                                  |       |                               |                                                                                               |
+| $z_{ps1} \to z_{LSST}$ | $z_{LSST} - z_{ps1} = -0.004 (i-z)_{ps1} -0.005$ | 0.012 | $-0.3 < (i-z)_{ps1} \leq 1.0$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_z_LSST-z_ps1.iz_ps1.norder1.qa1.png) |
+|                        |                                                  |       |                               |                                                                                               |
+| $y_{ps1} \to y_{LSST}$ | $y_{LSST} - y_{ps1} = +0.013 (z-y)_{ps1} +0.015$ | 0.026 | $-0.2 < (z-y)_{ps1} \leq 0.5$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_y_LSST-y_ps1.zy_ps1.norder1.qa1.png) |
+
+
 
 #### 1.3.4 LSST DP2 <--> GAIA DR3
 
@@ -143,33 +181,17 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | $gi_{sdss} \to gi_{LSST}$ | $gi_{LSST} - gi_{sdss} = -0.062 (g-i)_{sdss} +0.002$ | 0.029 | $-0.9 < (g-i)_{sdss} \leq 2.3$ | [link](_static/plots/qaPlot.SDSSDR18_to_LSSTDP2.fit.dmag_gi_LSST-gi_sdss.gi_sdss.norder1.qa1.png) |
 
 
-#### 1.3.6 LSST DP2 <--> PanStarrs1 DR2
 
 
-| Conversion             | Transformation Equation                           |   RMS | Applicable Color Range         | QA Plot                                                                                        |
-|:-----------------------|:--------------------------------------------------|------:|:-------------------------------|:-----------------------------------------------------------------------------------------------|
-| $g_{LSST} \to g_{ps1}$ | $g_{ps1} - g_{LSST} = -0.029 (g-i)_{LSST} -0.028$ | 0.03  | $-0.7 < (g-i)_{LSST} \leq 3.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_g_ps1-g_LSST.gi_LSST.norder1.qa1.png) |
-|                        |                                                   |       |                                |                                                                                                |
-| $r_{LSST} \to r_{ps1}$ | $r_{ps1} - r_{LSST} = +0.000 (g-i)_{LSST} -0.002$ | 0.017 | $-0.7 < (g-i)_{LSST} \leq 3.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_r_ps1-r_LSST.gi_LSST.norder1.qa1.png) |
-|                        |                                                   |       |                                |                                                                                                |
-| $i_{LSST} \to i_{ps1}$ | $i_{ps1} - i_{LSST} = +0.007 (g-i)_{LSST} -0.006$ | 0.012 | $-0.7 < (g-i)_{LSST} \leq 3.7$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_i_ps1-i_LSST.gi_LSST.norder1.qa1.png) |
-|                        |                                                   |       |                                |                                                                                                |
-| $z_{LSST} \to z_{ps1}$ | $z_{ps1} - z_{LSST} = +0.007 (i-z)_{LSST} +0.004$ | 0.012 | $-0.2 < (i-z)_{LSST} \leq 1.3$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_z_ps1-z_LSST.iz_LSST.norder1.qa1.png) |
-|                        |                                                   |       |                                |                                                                                                |
-| $y_{LSST} \to y_{ps1}$ | $y_{ps1} - y_{LSST} = +0.060 (z-y)_{LSST} -0.025$ | 0.025 | $-0.5 < (z-y)_{LSST} \leq 1.0$ | [link](_static/plots/qaPlot.LSST_DP2_to_PS1_DR2.fit.dmag_y_ps1-y_LSST.zy_LSST.norder1.qa1.png) |
+#### 1.3.6 LSST DP2 <--> Euclid
+
+_Under Construction_
 
 
-| Conversion             | Transformation Equation                          |   RMS | Applicable Color Range        | QA Plot                                                                                       |
-|:-----------------------|:-------------------------------------------------|------:|:------------------------------|:----------------------------------------------------------------------------------------------|
-| $g_{ps1} \to g_{LSST}$ | $g_{LSST} - g_{ps1} = +0.028 (g-i)_{ps1} +0.031$ | 0.031 | $-0.7 < (g-i)_{ps1} \leq 3.3$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_g_LSST-g_ps1.gi_ps1.norder1.qa1.png) |
-|                        |                                                  |       |                               |                                                                                               |
-| $r_{ps1} \to r_{LSST}$ | $r_{LSST} - r_{ps1} = -0.001 (g-i)_{ps1} +0.002$ | 0.017 | $-0.7 < (g-i)_{ps1} \leq 3.4$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_r_LSST-r_ps1.gi_ps1.norder1.qa1.png) |
-|                        |                                                  |       |                               |                                                                                               |
-| $i_{ps1} \to i_{LSST}$ | $i_{LSST} - i_{ps1} = -0.007 (g-i)_{ps1} +0.006$ | 0.012 | $-0.7 < (g-i)_{ps1} \leq 3.4$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_i_LSST-i_ps1.gi_ps1.norder1.qa1.png) |
-|                        |                                                  |       |                               |                                                                                               |
-| $z_{ps1} \to z_{LSST}$ | $z_{LSST} - z_{ps1} = -0.004 (i-z)_{ps1} -0.005$ | 0.012 | $-0.3 < (i-z)_{ps1} \leq 1.0$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_z_LSST-z_ps1.iz_ps1.norder1.qa1.png) |
-|                        |                                                  |       |                               |                                                                                               |
-| $y_{ps1} \to y_{LSST}$ | $y_{LSST} - y_{ps1} = +0.013 (z-y)_{ps1} +0.015$ | 0.026 | $-0.2 < (z-y)_{ps1} \leq 0.5$ | [link](_static/plots/qaPlot.PS1_DR2_to_LSST_DP2.fit.dmag_y_LSST-y_ps1.zy_ps1.norder1.qa1.png) |
+#### 1.3.7 LSST DP2 <--> Johnson-Cousins UBVRcIc
+
+_Under Construction_
+
 
 
 ## 2. Lookup Table (Interpolation) Transformations
@@ -213,20 +235,12 @@ df['g_des'] = df['g_ComCam'] + df['offset']
 
 #### 2.2.1 LSST DP2 <--> DES DR2
 
-##### 2.2.1.1 Original
-
-
-
-##### 2.2.1.2 Updated
-
-
-
-
-
+_Under Construction_
 
 
 #### 2.2.2 LSST DP2 <--> Euclid
 
+_Under Construction_
 
 
 #### 2.2.3 LSST DP2 <--> GAIA DR3
@@ -249,15 +263,18 @@ df['g_des'] = df['g_ComCam'] + df['offset']
 
 #### 2.2.4 LSST DP2 <--> PS1 DR2
 
+_Under Construction_
 
 
 #### 2.2.5 LSST DP2 <--> SDSS DR18
 
+_Under Construction_
 
 
 
 #### 2.2.5 LSST DP2 <--> Stetson UBVRcIc
 
+_Under Construction_
 
 
 

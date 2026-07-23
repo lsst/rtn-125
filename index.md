@@ -41,9 +41,9 @@ These transformations are based on the actual observed magnitudes of stars in DP
 #### 1.3.1 LSST DP2 <--> LSST DP1
 
 Recall that LSST Data Preview 1 (DP1) was performed with the LSST Commissioning Camera (ComCam), which used only ITL CCDs.
-LSST Data Preview 2 (DP2) was performed with the LSST Main Camerta (LSSTCam), which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.
+LSST Data Preview 2 (DP2) was performed with the LSST Main Camera (LSSTCam), which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.
 During photometric calibration, the DP2 data are placed onto a standard system across the camera focal plane.  The DP1 and DP2 standard systems differ slightly.
-Thus, for to compare DP1 and DP2 magnitudes and colors most accurately, one should transform from one system to the other.  Here are the relations to do just that.
+Thus, for to compare DP1 and DP2 magnitudes and colors most accurately, one should transform from one system to the other.  Here are the relations to do that.
 
 
 | Conversion                | Transformation Equation                           |   RMS | Applicable Color Range      | QA Plot                                                                                            |
@@ -247,10 +247,10 @@ df['g_des'] = df['g_ComCam'] + df['offset']
 
 _Under Construction_
 
-
-#### 2.2.2 LSST DP2 <--> Euclid
+#### 2.2.2 LSST DP2 <--> Panstarrs1 DR2
 
 _Under Construction_
+
 
 
 #### 2.2.3 LSST DP2 <--> GAIA DR3
@@ -271,18 +271,16 @@ _Under Construction_
 | $G_{gaia} \to y_{LSST}$ | 0.024 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_LSST_DR2.y_LSST_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_LSST_DR2.y_LSST_BP_RP_gaia.csv) |
 
 
-#### 2.2.4 LSST DP2 <--> PS1 DR2
+#### 2.2.4 LSST DP2 <--> SDSS DR18
+
+_Under Construction_
+
+#### 2.2.5 LSST DP2 <--> Euclid
 
 _Under Construction_
 
 
-#### 2.2.5 LSST DP2 <--> SDSS DR18
-
-_Under Construction_
-
-
-
-#### 2.2.5 LSST DP2 <--> Stetson UBVRcIc
+#### 2.2.6 LSST DP2 <--> Stetson UBVRcIc
 
 _Under Construction_
 

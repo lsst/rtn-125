@@ -65,7 +65,7 @@ Thus, for to compare DP1 and DP2 magnitudes and colors most accurately, one shou
 | $y_{ComCam} \to y_{LSST}$ | $y_{LSST} - y_{ComCam} = +0.036 (z−y)ComCam -0.002$ | 0.015 | $-0.2 < (z−y)ComCam \leq 0.4$ | [link](_static/plots/qaPlot.LSST_DP1_to_LSST_DP2.fit.dmag_y_LSST-y_ComCam.zy_ComCam.norder1.qa1.png) |
 
 
-#### 1.3.2 LSST DP2 <--> DES
+#### 1.3.2 LSST DP2 <--> DES DR2
 
 | Conversion             | Transformation Equation                        |   RMS | Applicable Color Range      | QA Plot                                                                                       |
 |:-----------------------|:-----------------------------------------------|------:|:----------------------------|:----------------------------------------------------------------------------------------------|
@@ -147,13 +147,13 @@ Thus, for to compare DP1 and DP2 magnitudes and colors most accurately, one shou
 | Conversion              | Transformation Equation                                                      |   RMS | Applicable Color Range           | QA Plot                                                                                             |
 |:------------------------|:-----------------------------------------------------------------------------|------:|:---------------------------------|:----------------------------------------------------------------------------------------------------|
 | $G_{gaia} \to g_{LSST}$ | $g_{LSST} - G_{gaia} = -0.099 (BP-RP)_{gaia}^2 +1.172 (BP-RP)_{gaia} -0.527$ | 0.036 | $0.6 < (BP-RP)_{gaia} \leq 3.1$  | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_g_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
-|                         |                                                                              |       |                                  |                                                                                                                                  |
+|                         |                                                                              |       |                                  |                                                                                                     |
 | $G_{gaia} \to r_{LSST}$ | $r_{LSST} - G_{gaia} = +0.286 (BP-RP)_{gaia}^2 -0.650 (BP-RP)_{gaia} +0.325$ | 0.024 | $0.5 < (BP-RP)_{gaia} \leq 3.1$  | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_r_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
-|                         |                                                                              |       |                                  |                                                                                                                                  |
+|                         |                                                                              |       |                                  |                                                                                                     |
 | $G_{gaia} \to i_{LSST}$ | $i_{LSST} - G_{gaia} = +0.104 (BP-RP)_{gaia}^2 -0.683 (BP-RP)_{gaia} +0.347$ | 0.01  | $-0.2 < (BP-RP)_{gaia} \leq 3.3$ | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_i_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
-|                         |                                                                              |       |                                  |                                                                                                                                  |
+|                         |                                                                              |       |                                  |                                                                                                     |
 | $G_{gaia} \to z_{LSST}$ | $z_{LSST} - G_{gaia} = +0.055 (BP-RP)_{gaia}^2 -0.817 (BP-RP)_{gaia} +0.464$ | 0.021 | $-0.4 < (BP-RP)_{gaia} \leq 3.3$ | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_z_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
-|                         |                                                                              |       |                                  |                                                                                                                                  |
+|                         |                                                                              |       |                                  |                                                                                                     |
 | $G_{gaia} \to y_{LSST}$ | $y_{LSST} - G_{gaia} = +0.044 (BP-RP)_{gaia}^2 -0.914 (BP-RP)_{gaia} +0.533$ | 0.026 | $0.3 < (BP-RP)_{gaia} \leq 3.3$  | [link](_static/plots/qaPlot.Gaia_DR3_to_LSST_DP2.fit.dmag_y_LSST-G_gaia.BP_RP_gaia.norder2.qa1.png) |
 
 

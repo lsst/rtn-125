@@ -10,9 +10,16 @@ This technical note provides photometric transformation relations between the Ve
 
 ## 0. General Overview
 
-These transformations were derived by matching data from other surveys with the Rubin LSST DP2 {cite}`RTN-095` (UPDATE).  This technical note provides a general overview of the results from the calculation of transformations to and from the Rubin LSST DP2 photometric system.  Details of the process will be presented in one or more future journal articles (Porter et al., _in preparation_, etc.).
+The transformations described in this note were obtained by cross‑matching photometric data from external surveys with the Rubin LSST DP2 data.
+Here, we provide a high‑level summary of the resulting transformation relations for converting to and from the DP2 photometric system.
 
-This technical note should be considered a living document:  as additional photometric systems are analyzed and/or current transformations are updated, this document will be updated to include the new material.
+This note is intended to remain a living document. As additional photometric systems are incorporated or existing DP2 transformations updated, new material will be added accordingly.
+
+:::{note}
+Transformations between the DP1 photometric system and several external systems are available in RTN-099 <https://rtn-099.lsst.io/>_.
+RTN‑125 is still in active development and does not yet include DP2 transformations for all systems.
+In the meantime, for those systems not already included below, users should apply the DP2→DP1 relations in Section 1.3.1, followed by the DP1→other‑system transformations provided in RTN‑099.
+:::
 
 ## 1. Polynomial Fit Transformations
 
@@ -43,7 +50,7 @@ These transformations are based on the actual observed magnitudes of stars in DP
 Recall that LSST Data Preview 1 (DP1) was performed with the LSST Commissioning Camera (ComCam), which used only ITL CCDs.
 LSST Data Preview 2 (DP2) was performed with the LSST Main Camera (LSSTCam), which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.
 During photometric calibration, the DP2 data are placed onto a standard system across the camera focal plane.  The DP1 and DP2 standard systems differ slightly.
-Thus, for to compare DP1 and DP2 magnitudes and colors most accurately, one should transform from one system to the other.  Here are the relations to do that.
+Thus, to compare DP1 and DP2 magnitudes and colors most accurately, one should transform from one system to the other.  Here are the relations to do that.
 
 
 | Conversion                | Transformation Equation                           |   RMS | Applicable Color Range      | QA Plot                                                                                            |

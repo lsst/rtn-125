@@ -5,7 +5,7 @@ This technical note provides photometric transformation relations between the Ve
 ```
 
 
-**DOI:** insert when published
+**DOI:** To be inserted when available
 
 
 ## 0. General Overview
@@ -16,9 +16,9 @@ Here, we provide a high‑level summary of the resulting transformation relation
 This note is intended to remain a living document. As additional photometric systems are incorporated or existing DP2 transformations updated, new material will be added accordingly.
 
 :::{note}
-Transformations between the DP1 photometric system and several external systems are available in RTN-099 <https://rtn-099.lsst.io/>_.
-RTN‑125 is still in active development and does not yet include DP2 transformations for all systems.
-In the meantime, for those systems not already included below, users should apply the DP2→DP1 relations in Section 1.3.1, followed by the DP1→other‑system transformations provided in RTN‑099.
+Transformations between the DP1 photometric system and several external systems are available in [RTN-099](https://rtn-099.lsst.io/).
+RTN‑125 is still in active development and does not yet include DP2 transformations for all the systems provided in RTN-099.
+In the meantime, for those systems not already included below, users should apply the DP2→DP1 relations in [Section 1.3.1](#131-lsst-dp2--lsst-dp1), followed by the DP1→other‑system transformations provided in RTN‑099.
 :::
 
 ## 1. Polynomial Fit Transformations

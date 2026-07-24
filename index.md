@@ -18,7 +18,7 @@ This note is intended to remain a living document. As additional photometric sys
 :::{note}
 Transformations between the DP1 photometric system and several external systems are available in [RTN-099](https://rtn-099.lsst.io/).
 RTN‑125 is still in active development and does not yet include DP2 transformations for all the systems provided in RTN-099.
-In the meantime, for those systems not already included below, users should apply the DP2→DP1 relations in [Section 1.3.1](#131-lsst-dp2--lsst-dp1), followed by the DP1→other‑system transformations provided in RTN‑099.
+In the meantime, for those systems not already included below, users should apply the DP2→DP1 relations in [Section 1.3.1](#dp2-dp1), followed by the DP1→other‑system transformations provided in RTN‑099.
 :::
 
 ## 1. Polynomial Fit Transformations
@@ -45,7 +45,8 @@ _Under Construction_
 
 These transformations are based on the actual observed magnitudes of stars in DP2 and from other surveys/photometric systems.  They are generally preferred over transformations based on synthetic photometry.
 
-#### 1.3.1 LSST DP2 <--> LSST DP1
+#### 1.3.1 LSST DP2 <--> LSST DP1 {#dp2-dp1}
+
 
 Recall that LSST Data Preview 1 (DP1) was performed with the LSST Commissioning Camera (ComCam), which used only ITL CCDs.
 LSST Data Preview 2 (DP2) was performed with the LSST Main Camera (LSSTCam), which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.

@@ -5,7 +5,7 @@ This technical note provides photometric transformation relations between the NS
 ```
 
 
-**DOI:** To be inserted when available
+**DOI:** [10.71929/rubin/3399546](https://doi.org/10.71929/rubin/3399546)
 
 
 ## 0. General Overview

@@ -1,22 +1,22 @@
 # Photometric Transformation Relations for the LSST Data Preview 2
 
 ```{abstract}
-This technical note provides photometric transformation relations between the Vera C. Rubin Observatory’s Data Preview 2 (DP2) and other photometric systems. These transformations are derived using both synthetic and empirical data and are intended to support calibration and comparison across survey systems. We present both polynomial equations and lookup-table-based methods, depending on the available data and desired accuracy. The transformations are generally valid for stars with typical spectral energy distributions (SEDs), and caution should be used when applying them to objects with strong emission lines or atypical colors.
+This technical note provides photometric transformation relations between the NSF-DOE Vera C. Rubin Observatory’s Data Preview 2 (DP2) and other photometric systems. These transformations are derived using both synthetic and empirical data and are intended to support calibration and comparison across survey systems. We present both polynomial equations and lookup-table-based methods, depending on the available data and desired accuracy. The transformations are generally valid for stars with typical spectral energy distributions (SEDs), and caution should be used when applying them to objects with strong emission lines or atypical colors.
 ```
 
 
-**DOI:** To be inserted when available
+**DOI:** [10.71929/rubin/3399546](https://doi.org/10.71929/rubin/3399546)
 
 
 ## 0. General Overview
 
-The transformations described in this note were obtained by cross‑matching photometric data from external surveys with the Rubin LSST DP2 data.
+The transformations described in this note were obtained by cross‑matching photometric data from external surveys with the Rubin LSST DP2 data {cite:p}`10.71929/rubin/3382528,RTN-115`.
 Here, we provide a high‑level summary of the resulting transformation relations for converting to and from the DP2 photometric system.
 
 This note is intended to remain a living document. As additional photometric systems are incorporated or existing DP2 transformations updated, new material will be added accordingly.
 
 :::{note}
-Transformations between the DP1 photometric system and several external systems are available in [RTN-099](https://rtn-099.lsst.io/).
+Transformations between the DP1 photometric system and several external systems are available in [RTN-099](https://rtn-099.lsst.io/) {cite:p}`RTN-099`.
 RTN‑125 is still in active development and does not yet include DP2 transformations for all the systems provided in RTN-099.
 In the meantime, for those systems not already included below, users should apply the DP2→DP1 relations in Section 1.3.1 below, followed by the DP1→other‑system transformations provided in RTN‑099.
 :::
@@ -25,7 +25,7 @@ In the meantime, for those systems not already included below, users should appl
 
 ### 1.1. Overview
 
-A simple and popular method of performing photometric transformations between two photometric systems is to perform a polynomial fit between the difference in magnitudes between a filter band in one system (say, the LSSTCam $i$ band) and another system (say, the DES $i$ band) and one or more color indices in one of the two sytstems (say, the $(g-i)$ color in the DES system).  These fits can be low-order (say, a first-degree polynomial) or high-order (say, a third or higher degree polynomial).  They can be a single fit over the full color range, or they can be solved "piece-wise", with breaks in the fit at one or more values of the color index.  Here, a balance between simplicity and accuracy is attempted, aiming for the lowest-order fit that still gives a reasonable level of accuracy (typically with RMS'es of a few hundredths to a few tenths of a magnitude.)  If higher accuracy is required -- to the extent that complexity is not a major factor -- use of the Lookup Table (Interpolation) Transformations in Section 2 is recommended.
+A simple and popular method of performing photometric transformations between two photometric systems is to perform a polynomial fit between the difference in magnitudes between a filter band in one system (say, the LSSTCam $i$ band) and another system (say, the DES $i$ band) and one or more color indices in one of the two systems (say, the $(g-i)$ color in the DES system).  These fits can be low-order (say, a first-degree polynomial) or high-order (say, a third or higher degree polynomial).  They can be a single fit over the full color range, or they can be solved "piece-wise", with breaks in the fit at one or more values of the color index.  Here, a balance between simplicity and accuracy is attempted, aiming for the lowest-order fit that still gives a reasonable level of accuracy (typically with RMS'es of a few hundredths to a few tenths of a magnitude.)  If higher accuracy is required -- to the extent that complexity is not a major factor -- use of the Lookup Table (Interpolation) Transformations in Section 2 is recommended.
 
 
 ### 1.2. Synthetic LSSTCam Transformations
@@ -48,8 +48,8 @@ These transformations are based on the actual observed magnitudes of stars in DP
 #### 1.3.1 LSST DP2 <--> LSST DP1
 
 
-Recall that LSST Data Preview 1 (DP1) was performed with the LSST Commissioning Camera (ComCam), which used only ITL CCDs.
-LSST Data Preview 2 (DP2) was performed with the LSST Main Camera (LSSTCam), which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.
+Recall that LSST Data Preview 1 (DP1) {cite:p}`RTN-095,2026AJ....171..360V` was performed with the LSST Commissioning Camera (LSSTComCam) {cite:p}`10.71929/rubin/2561361`, which used only ITL CCDs.
+LSST Data Preview 2 (DP2) was performed with the LSST Main Camera (LSSTCam) {cite:p}`10.71929/rubin/2571927`, which uses mostly e2v CCDs with a relatively small subset of ITL CCDS.
 During photometric calibration, the DP2 data are placed onto a standard system across the camera focal plane.  The DP1 and DP2 standard systems differ slightly.
 Thus, to compare DP1 and DP2 magnitudes and colors most accurately, one should transform from one system to the other.  Here are the relations to do that.
 

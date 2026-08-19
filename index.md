@@ -208,7 +208,37 @@ _Under Construction_
 
 #### 1.3.7 LSST DP2 <--> Johnson-Cousins UBVRcIc
 
-_Under Construction_
+| Conversion       | Transformation Equation                     |   RMS | Applicable Color Range         | QA Plot                                                                                    |
+|:-----------------|:--------------------------------------------|------:|:-------------------------------|:-------------------------------------------------------------------------------------------|
+| $u_{LSST} \to U$ | $U - u_{LSST} = +0.036 (g-i)_{LSST} -0.743$ | 0.037 | $-2.2 < (g-i)_{LSST} \leq 2.5$ | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_U-u_LSST.gi_LSST.norder1.qa1.png) |
+|                  |                                             |       |                                |                                                                                            |
+| $g_{LSST} \to B$ | $B - g_{LSST} = +0.328 (g-i)_{LSST} +0.189$ | 0.036 | $-0.5 < (g-i)_{LSST} \leq 1.6$ | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_B-g_LSST.gi_LSST.norder1.qa1.png) |
+| $g_{LSST} \to B$ | $B - g_{LSST} = +0.242 (g-i)_{LSST} +0.302$ | 0.041 | $1.6 < (g-i)_{LSST} \leq 3.7$  | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_B-g_LSST.gi_LSST.norder1.qa1.png) |
+|                  |                                             |       |                                |                                                                                            |
+| $g_{LSST} \to V$ | $V - g_{LSST} = -0.345 (g-i)_{LSST} -0.046$ | 0.02  | $-0.5 < (g-i)_{LSST} \leq 1.6$ | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_V-g_LSST.gi_LSST.norder1.qa1.png) |
+| $g_{LSST} \to V$ | $V - g_{LSST} = -0.141 (g-i)_{LSST} -0.383$ | 0.047 | $1.6 < (g-i)_{LSST} \leq 4.0$  | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_V-g_LSST.gi_LSST.norder1.qa1.png) |
+|                  |                                             |       |                                |                                                                                            |
+| $r_{LSST} \to R$ | $R - r_{LSST} = -0.078 (g-i)_{LSST} -0.160$ | 0.02  | $-0.5 < (g-i)_{LSST} \leq 1.6$ | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_R-r_LSST.gi_LSST.norder1.qa1.png) |
+| $r_{LSST} \to R$ | $R - r_{LSST} = -0.207 (g-i)_{LSST} +0.062$ | 0.031 | $1.6 < (g-i)_{LSST} \leq 4.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_R-r_LSST.gi_LSST.norder1.qa1.png) |
+|                  |                                             |       |                                |                                                                                            |
+| $i_{LSST} \to I$ | $I - i_{LSST} = -0.077 (g-i)_{LSST} -0.393$ | 0.026 | $-0.5 < (g-i)_{LSST} \leq 1.6$ | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_I-i_LSST.gi_LSST.norder1.qa1.png) |
+| $i_{LSST} \to I$ | $I - i_{LSST} = -0.135 (g-i)_{LSST} -0.295$ | 0.033 | $1.6 < (g-i)_{LSST} \leq 4.8$  | [link](_static/plots/qaPlot.LSST_DP2_to_UBVRcIc.fit.dmag_I-i_LSST.gi_LSST.norder1.qa1.png) |
+
+
+| Conversion       | Transformation Equation              |   RMS | Applicable Color Range   | QA Plot                                                                               |
+|:-----------------|:-------------------------------------|------:|:-------------------------|:--------------------------------------------------------------------------------------|
+| $U \to u_{LSST}$ | $u_{LSST} - U = -0.029 (U-B) +0.744$ | 0.035 | $-0.3 < (U-B) \leq 2.8$  | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_u_LSST-U.UB.norder1.qa1.png) |
+|                  |                                      |       |                          |                                                                                       |
+| $V \to g_{LSST}$ | $g_{LSST} - V = +0.502 (B-V) -0.065$ | 0.021 | $-0.1 < (B-V) \leq 2.6$  | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_g_LSST-V.BV.norder1.qa1.png) |
+|                  |                                      |       |                          |                                                                                       |
+| $R \to r_{LSST}$ | $r_{LSST} - R = +0.251 (R-I) +0.106$ | 0.021 | $-0.0 < (R-I) \leq 1.8$  | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_r_LSST-R.RI.norder1.qa1.png) |
+|                  |                                      |       |                          |                                                                                       |
+| $I \to i_{LSST}$ | $i_{LSST} - I = +0.231 (R-I) +0.349$ | 0.023 | $-0.0 < (R-I) \leq 2.1$  | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_i_LSST-I.RI.norder1.qa1.png) |
+|                  |                                      |       |                          |                                                                                       |
+| $I \to z_{LSST}$ | $z_{LSST} - I = -0.275 (R-I) +0.482$ | 0.024 | $-0.0 < (R-I) \leq 1.8$  | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_z_LSST-I.RI.norder1.qa1.png) |
+|                  |                                      |       |                          |                                                                                       |
+| $I \to y_{LSST}$ | $y_{LSST} - I = -0.734 (R-I) +0.648$ | 0.039 | $-0.0 < (R-I) \leq 0.6$  | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_y_LSST-I.RI.norder1.qa1.png) |
+| $I \to y_{LSST}$ | $y_{LSST} - I = -0.404 (R-I) +0.423$ | 0.042 | $0.6 < (R-I) \leq 1.8$   | [link](_static/plots/qaPlot.UBVRcIc_to_LSST_DP2.fit.dmag_y_LSST-I.RI.norder1.qa1.png) |
 
 
 

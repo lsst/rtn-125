@@ -203,7 +203,20 @@ Thus, to compare DP1 and DP2 magnitudes and colors most accurately, one should t
 
 #### 1.3.6 LSST DP2 <--> Euclid
 
-_Under Construction_
+| Conversion                  | Transformation Equation                                |   RMS | Applicable Color Range           | QA Plot                                                                                               |
+|:----------------------------|:-------------------------------------------------------|------:|:---------------------------------|:------------------------------------------------------------------------------------------------------|
+| $r_{LSST} \to VIS_{EUCLID}$ | $VIS_{EUCLID} - r_{LSST} = -0.238 (g-i)_{LSST} +0.126$ | 0.026 | $-0.56 < (g-i)_{LSST} \leq 1.90$ |                                                                                                       |
+| $r_{LSST} \to VIS_{EUCLID}$ | $VIS_{EUCLID} - r_{LSST} = -0.848 (g-i)_{LSST} +1.257$ | 0.05  | $1.90 < (g-i)_{LSST} \leq 3.70$  |                                                                                                       |
+|                             |                                                        |       |                                  |                                                                                                       |
+| $y_{LSST} \to Y_{EUCLID}$   | $Y_{EUCLID} - y_{LSST} = -0.613 (z-y)_{LSST} -0.055$   | 0.034 | $-0.25 < (z-y)_{LSST} \leq 0.56$ | [link](_static/plots/qaPlot.LSST_DP2_to_Euclid_Q1.fit.dmag_Y_EUCLID-y_LSST.zy_LSST.norder1.qa1.png)   |
+|                             |                                                        |       |                                  |                                                                                                       |
+| $y_{LSST} \to H_{EUCLID}$   | $H_{EUCLID} - y_{LSST} = -4.486 (z-y)_{LSST} +0.184$   | 0.109 | $-0.18 < (z-y)_{LSST} \leq 0.10$ | [link](_static/plots/qaPlot.LSST_DP2_to_Euclid_Q1.fit.dmag_H_EUCLID-y_LSST.zy_LSST.norder1.qa1.png)   |
+| $y_{LSST} \to H_{EUCLID}$   | $H_{EUCLID} - y_{LSST} = -0.529 (z-y)_{LSST} -0.258$   | 0.055 | $0.10 < (z-y)_{LSST} \leq 0.54$  | [link](_static/plots/qaPlot.LSST_DP2_to_Euclid_Q1.fit.dmag_H_EUCLID-y_LSST.zy_LSST.norder1.qa1.png)   |
+|                             |                                                        |       |                                  |                                                                                                       |
+| $y_{LSST} \to J_{EUCLID}$   | $J_{EUCLID} - y_{LSST} = -2.549 (z-y)_{LSST} +0.016$   | 0.071 | $-0.18 < (z-y)_{LSST} \leq 0.10$ | [link](_static/plots/qaPlot.LSST_DP2_to_Euclid_Q1.fit.dmag_J_EUCLID-y_LSST.zy_LSST.norder1.qa1.png)   |
+| $y_{LSST} \to J_{EUCLID}$   | $J_{EUCLID} - y_{LSST} = -0.643 (z-y)_{LSST} -0.201$   | 0.038 | $0.10 < (z-y)_{LSST} \leq 0.56$  | [link](_static/plots/qaPlot.LSST_DP2_to_Euclid_Q1.fit.dmag_J_EUCLID-y_LSST.zy_LSST.norder1.qa1.png)   |
+
+
 | Conversion                  | Transformation Equation                                                              |   RMS | Applicable Color Range               | QA Plot                                                                                                   |
 |:----------------------------|:-------------------------------------------------------------------------------------|------:|:-------------------------------------|:----------------------------------------------------------------------------------------------------------|
 | $VIS_{EUCLID} \to g_{LSST}$ | $g_{LSST} - VIS_{EUCLID} = +1.430 (VIS-Y)_{Euclid} +0.071$                           | 0.057 | $-0.46 < (VIS-Y)_{Euclid} \leq 0.40$ | [link](_static/plots/qaPlot.Euclid_Q1_to_LSST_DP2.fit.dmag_g_LSST-VIS_EUCLID.VISY_EUCLID.norder1.qa1.png) |

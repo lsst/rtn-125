@@ -342,7 +342,25 @@ _Under Construction_
 
 #### 2.2.4 LSST DP2 <--> SDSS DR18
 
-_Under Construction_
+
+
+| Conversion                |   RMS | Applicable Color Range     | QA Plot                                                                            | Lookup Table                                                               |
+|:--------------------------|------:|:---------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
+| $g_{LSST} \to g_{sdss}$   | 0.021 | $0.1 < (g-i)_{LSST} < 1.6$ | [link](_static/plots/qaPlot_transInterp.LSST_DP2_to_SDSS_DR18.g_sdss_gi_LSST.png)  | [link](_static/data/transInterp.LSST_DP2_to_SDSS_DR18.g_sdss_gi_LSST.csv)  |
+| $r_{LSST} \to r_{sdss}$   | 0.019 | $0.1 < (g-i)_{LSST} < 1.6$ | [link](_static/plots/qaPlot_transInterp.LSST_DP2_to_SDSS_DR18.r_sdss_gi_LSST.png)  | [link](_static/data/transInterp.LSST_DP2_to_SDSS_DR18.r_sdss_gi_LSST.csv)  |
+| $i_{LSST} \to i_{sdss}$   | 0.02  | $0.1 < (g-i)_{LSST} < 1.6$ | [link](_static/plots/qaPlot_transInterp.LSST_DP2_to_SDSS_DR18.i_sdss_gi_LSST.png)  | [link](_static/data/transInterp.LSST_DP2_to_SDSS_DR18.i_sdss_gi_LSST.csv)  |
+| $z_{LSST} \to z_{sdss}$   | 0.029 | $0.1 < (g-i)_{LSST} < 1.6$ | [link](_static/plots/qaPlot_transInterp.LSST_DP2_to_SDSS_DR18.z_sdss_gi_LSST.png)  | [link](_static/data/transInterp.LSST_DP2_to_SDSS_DR18.z_sdss_gi_LSST.csv)  |
+| $gi_{LSST} \to gi_{sdss}$ | 0.03  | $0.1 < (g-i)_{LSST} < 1.6$ | [link](_static/plots/qaPlot_transInterp.LSST_DP2_to_SDSS_DR18.gi_sdss_gi_LSST.png) | [link](_static/data/transInterp.LSST_DP2_to_SDSS_DR18.gi_sdss_gi_LSST.csv) |
+
+
+| Conversion                |   RMS | Applicable Color Range     | QA Plot                                                                            | Lookup Table                                                               |
+|:--------------------------|------:|:---------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
+| $g_{sdss} \to g_{LSST}$   | 0.02  | $0.1 < (g-i)_{sdss} < 1.7$ | [link](_static/plots/qaPlot_transInterp.SDSS_DR18_to_LSST_DP2.g_LSST_gi_sdss.png)  | [link](_static/data/transInterp.SDSS_DR18_to_LSST_DP2.g_LSST_gi_sdss.csv)  |
+| $r_{sdss} \to r_{LSST}$   | 0.019 | $0.1 < (g-i)_{sdss} < 1.7$ | [link](_static/plots/qaPlot_transInterp.SDSS_DR18_to_LSST_DP2.r_LSST_gi_sdss.png)  | [link](_static/data/transInterp.SDSS_DR18_to_LSST_DP2.r_LSST_gi_sdss.csv)  |
+| $i_{sdss} \to i_{LSST}$   | 0.02  | $0.1 < (g-i)_{sdss} < 1.7$ | [link](_static/plots/qaPlot_transInterp.SDSS_DR18_to_LSST_DP2.i_LSST_gi_sdss.png)  | [link](_static/data/transInterp.SDSS_DR18_to_LSST_DP2.i_LSST_gi_sdss.csv)  |
+| $z_{sdss} \to z_{LSST}$   | 0.029 | $0.1 < (g-i)_{sdss} < 1.7$ | [link](_static/plots/qaPlot_transInterp.SDSS_DR18_to_LSST_DP2.z_LSST_gi_sdss.png)  | [link](_static/data/transInterp.SDSS_DR18_to_LSST_DP2.z_LSST_gi_sdss.csv)  |
+| $gi_{sdss} \to gi_{LSST}$ | 0.028 | $0.1 < (g-i)_{sdss} < 1.7$ | [link](_static/plots/qaPlot_transInterp.SDSS_DR18_to_LSST_DP2.gi_LSST_gi_sdss.png) | [link](_static/data/transInterp.SDSS_DR18_to_LSST_DP2.gi_LSST_gi_sdss.csv) |
+
 
 #### 2.2.5 LSST DP2 <--> Euclid
 
